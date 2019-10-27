@@ -11,7 +11,7 @@ ByteCode::~ByteCode() {}
 //Runtime stack has all the variables in a vector
 //
 vector<unsigned char> ByteCode::Read_In(const char* argv){
-    //makes bevtor oy mem
+    //makes vector of mem
     std::ifstream stream(argv, std::ios::in | std::ios::binary);
     std::vector<uint8_t> contents((std::istreambuf_iterator<char>(stream)), std::istreambuf_iterator<char>());
 
@@ -67,5 +67,6 @@ void ByteCode::CMPE_func(){
     sp--;
     rstack.pop_back();
     pc++;
-
 }
+
+void ByteCode::CMPLT_func(){}
