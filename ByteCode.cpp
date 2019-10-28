@@ -140,10 +140,6 @@ void ByteCode::PUSHS_func(){
     pc += 2;
 }
 
-//void ByteCode::PUSHVC_func() {
-//    rstack[sp] = rstack[fpstack[fpsp]+rstack[sp]+1];
-//}
-
 void ByteCode::JMP_func(){
     pc = rstack[sp];
     sp--;
