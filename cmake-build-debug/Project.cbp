@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug"/>
+				<Option working_dir="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug"/>
+				<Option working_dir="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug"/>
+				<Option working_dir="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="austin_is_stupid">
-				<Option output="/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/austin_is_stupid" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug"/>
+				<Option output="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug/austin_is_stupid" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -53,15 +53,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 austin_is_stupid"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 austin_is_stupid"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="austin_is_stupid/fast">
-				<Option output="/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/austin_is_stupid" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug"/>
+				<Option output="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug/austin_is_stupid" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -75,23 +75,23 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 austin_is_stupid/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 austin_is_stupid/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/CheungLee/30862\ HWs/byteCodeProj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/daryldabreo/Documents/byteCodeProj/ByteCode.cpp">
+		<Unit filename="/Users/CheungLee/30862 HWs/byteCodeProj/ByteCode.cpp">
 			<Option target="austin_is_stupid"/>
 		</Unit>
-		<Unit filename="/Users/daryldabreo/Documents/byteCodeProj/ByteCode.h">
+		<Unit filename="/Users/CheungLee/30862 HWs/byteCodeProj/ByteCode.h">
 			<Option target="austin_is_stupid"/>
 		</Unit>
-		<Unit filename="/Users/daryldabreo/Documents/byteCodeProj/main.cpp">
+		<Unit filename="/Users/CheungLee/30862 HWs/byteCodeProj/main.cpp">
 			<Option target="austin_is_stupid"/>
 		</Unit>
-		<Unit filename="/Users/daryldabreo/Documents/byteCodeProj/CMakeLists.txt">
+		<Unit filename="/Users/CheungLee/30862 HWs/byteCodeProj/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

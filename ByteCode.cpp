@@ -144,6 +144,7 @@ void ByteCode::PUSHS_func(){
     pc += 2;
 }
 
+<<<<<<< HEAD
 void ByteCode::PUSHI_func(){
     data test;
     unsigned char bytes[4] = {memory[pc+1],memory[pc+2],memory[pc+3],memory[pc+4]};
@@ -181,3 +182,27 @@ void ByteCode::POPM_func() {
     sp -= rstack[sp]+1;
 
 }
+=======
+
+void ByteCode::JMP_func(){
+    pc = rstack[sp];
+    sp--;
+}
+void ByteCode::JMPC_func(){
+    if (rstack[sp-1].int_val == 1) {
+        pc = rstack[sp];
+    }
+    else {
+        pc++;
+    }
+    sp -= 2;
+}
+void ByteCode::CALL_func(){
+    fpstack[++fpsp] = (sp - rstack[sp].int_val) - 1;  // subtract off argument stack entries
+    sp--;
+    pc = rstack[sp--]; //set the PC to the address of the label to be jumped to
+}
+void ByteCode::RET_func(){
+
+}
+
