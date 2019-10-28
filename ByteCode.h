@@ -61,6 +61,8 @@ public:
     int pc = 0; //contains address of next instruction
     vector<unsigned char> memory;
     vector<data> rstack;
+    vector<int> fpstack; //DOING THIS FOR NOW BUT MIGHT HAVE TO CHANGE ASK TA
+
     ByteCode(char*);
     virtual ~ByteCode();
     vector<unsigned char> Read_In(const char* argv);
