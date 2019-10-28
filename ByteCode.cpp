@@ -121,9 +121,31 @@ void ByteCode::CMPGT_func(){
     pc++;
 }
 
+//__________________CONTROL FLOW FUNCTIONS__________________
 
+void ByteCode::JMP_func(){
+    pc = rstack[sp];
+    sp--;
+}
+void ByteCode::JMPC_func(){
+    if (rstack[sp-1].int_val == 1) {
+        pc = rstack[sp];
+    }
+    else {
+        pc++;
+    }
+    sp -= 2;
+}
+void ByteCode::CALL_func(){
+    fpstack[++fpsp] = (sp - rstack[sp].int_val) - 1;  // subtract off argument stack entries
+    sp--;
+    pc = rstack[sp--]; //set the PC to the address of the label to be jumped to
+}
+void ByteCode::RET_func(){
 
+}
 
+//__________________STACK MANIPULATION BYTE FUNCTIONS__________________
 
 void ByteCode::PUSHC_func(){
     data test;
@@ -182,25 +204,109 @@ void ByteCode::POPM_func() {
 
 }
 
-void ByteCode::JMP_func(){
-    pc = rstack[sp];
-    sp--;
-}
-void ByteCode::JMPC_func(){
-    if (rstack[sp-1].int_val == 1) {
-        pc = rstack[sp];
-    }
-    else {
-        pc++;
-    }
-    sp -= 2;
-}
-void ByteCode::CALL_func(){
-    fpstack[++fpsp] = (sp - rstack[sp].int_val) - 1;  // subtract off argument stack entries
-    sp--;
-    pc = rstack[sp--]; //set the PC to the address of the label to be jumped to
-}
-void ByteCode::RET_func(){
+void ByteCode::SWP(){
 
 }
 
+//__________________ARITHMETIC FUNCTIONS__________________
+
+void ByteCode::ADD(){
+    if (rstack[sp].dtype == FLOAT){
+        rstack[sp-1].float_val = rstack[sp-1].float_val + rstack[sp].float_val;
+    }
+    else if (rstack[sp].dtype == INT){
+        rstack[sp-1].int_val = rstack[sp-1].int_val + rstack[sp].int_val;
+    }
+    else if (rstack[sp].dtype == CHAR){
+        rstack[sp-1].char_val = rstack[sp-1].char_val + rstack[sp].char_val;
+    }
+    else if (rstack[sp].dtype == SHORT){
+        rstack[sp-1].short_val = rstack[sp-1].short_val + rstack[sp].short_val;
+    }
+    sp--;
+}
+void ByteCode::SUB(){
+    if (rstack[sp].dtype == FLOAT){
+        rstack[sp-1].float_val = rstack[sp-1].float_val - rstack[sp].float_val;
+    }
+    else if (rstack[sp].dtype == INT){
+        rstack[sp-1].int_val = rstack[sp-1].int_val - rstack[sp].int_val;
+    }
+    else if (rstack[sp].dtype == CHAR){
+        rstack[sp-1].char_val = rstack[sp-1].char_val - rstack[sp].char_val;
+    }
+    else if (rstack[sp].dtype == SHORT){
+        rstack[sp-1].short_val = rstack[sp-1].short_val - rstack[sp].short_val;
+    }
+    sp--;
+}
+void ByteCode::MUL(){
+    if (rstack[sp].dtype == FLOAT){
+        rstack[sp-1].float_val = rstack[sp-1].float_val * rstack[sp].float_val;
+    }
+    else if (rstack[sp].dtype == INT){
+        rstack[sp-1].int_val = rstack[sp-1].int_val * rstack[sp].int_val;
+    }
+    else if (rstack[sp].dtype == CHAR){
+        rstack[sp-1].char_val = rstack[sp-1].char_val * rstack[sp].char_val;
+    }
+    else if (rstack[sp].dtype == SHORT){
+        rstack[sp-1].short_val = rstack[sp-1].short_val * rstack[sp].short_val;
+    }
+    sp--;
+}
+void ByteCode::DIV(){
+    if (rstack[sp].dtype == FLOAT){
+        rstack[sp-1].float_val = rstack[sp-1].float_val / rstack[sp].float_val;
+    }
+    else if (rstack[sp].dtype == INT){
+        rstack[sp-1].int_val = rstack[sp-1].int_val / rstack[sp].int_val;
+    }
+    else if (rstack[sp].dtype == CHAR){
+        rstack[sp-1].char_val = rstack[sp-1].char_val / rstack[sp].char_val;
+    }
+    else if (rstack[sp].dtype == SHORT){
+        rstack[sp-1].short_val = rstack[sp-1].short_val / rstack[sp].short_val;
+    }
+    sp--;
+}
+
+//__________________SPECIAL FUNCTIONS__________________
+
+void ByteCode::PRINTC(){
+    std::cout << rstack[sp--].char_val << std::endl;
+}
+void ByteCode::PRINTS(){
+    std::cout << rstack[sp--].short_val << std::endl;
+}
+void ByteCode::PRINTI(){
+    std::cout << rstack[sp--].int_val << std::endl;
+}
+void ByteCode::PRINTF(){
+    std::cout << rstack[sp--].float_val << std::endl;
+}
+void ByteCode::HALT(){
+    // Print pc, sp, rstack, fpsp, fpstack.
+    std::cout << "PC: " << pc << std::endl;
+    std::cout << "SP: " << sp << std::endl;
+    std::cout << "Runtime Stack: " << std::endl;
+    if(sp == -1){
+        std::cout << "empty" << std::endl;
+    }
+    else{
+        for (int i = sp; i >= 0; i--){
+            std::cout << rstack[i].dtype << std::endl;
+        }
+    }
+
+    std::cout << "FP SP: " << fpsp << std::endl;
+    std::cout << "Frame Pointer Stack: " << std::endl;
+    if(fpsp == -1){
+        std::cout << "empty" << std::endl;
+    }
+    else{
+        for (int i = fpsp; i >= 0; i--){
+            std::cout << fpstack[i] << std::endl;
+        }
+    }
+}
