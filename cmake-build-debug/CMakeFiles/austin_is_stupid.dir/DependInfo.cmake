@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/daryldabreo/Documents/byteCodeProj/ByteCode.cpp" "/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o"
-  "/Users/daryldabreo/Documents/byteCodeProj/main.cpp" "/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/CMakeFiles/austin_is_stupid.dir/main.cpp.o"
+  "/Users/CheungLee/30862 HWs/byteCodeProj/ByteCode.cpp" "/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug/CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o"
+  "/Users/CheungLee/30862 HWs/byteCodeProj/main.cpp" "/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug/CMakeFiles/austin_is_stupid.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

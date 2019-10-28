@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/daryldabreo/Documents/byteCodeProj
+CMAKE_SOURCE_DIR = "/Users/CheungLee/30862 HWs/byteCodeProj"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/austin_is_stupid.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/austin_is_stupid.dir/flags.make
 
 CMakeFiles/austin_is_stupid.dir/main.cpp.o: CMakeFiles/austin_is_stupid.dir/flags.make
 CMakeFiles/austin_is_stupid.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/austin_is_stupid.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/austin_is_stupid.dir/main.cpp.o -c /Users/daryldabreo/Documents/byteCodeProj/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/austin_is_stupid.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/austin_is_stupid.dir/main.cpp.o -c "/Users/CheungLee/30862 HWs/byteCodeProj/main.cpp"
 
 CMakeFiles/austin_is_stupid.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/austin_is_stupid.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daryldabreo/Documents/byteCodeProj/main.cpp > CMakeFiles/austin_is_stupid.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/CheungLee/30862 HWs/byteCodeProj/main.cpp" > CMakeFiles/austin_is_stupid.dir/main.cpp.i
 
 CMakeFiles/austin_is_stupid.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/austin_is_stupid.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daryldabreo/Documents/byteCodeProj/main.cpp -o CMakeFiles/austin_is_stupid.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/CheungLee/30862 HWs/byteCodeProj/main.cpp" -o CMakeFiles/austin_is_stupid.dir/main.cpp.s
 
 CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o: CMakeFiles/austin_is_stupid.dir/flags.make
 CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o: ../ByteCode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o -c /Users/daryldabreo/Documents/byteCodeProj/ByteCode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o -c "/Users/CheungLee/30862 HWs/byteCodeProj/ByteCode.cpp"
 
 CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/daryldabreo/Documents/byteCodeProj/ByteCode.cpp > CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/CheungLee/30862 HWs/byteCodeProj/ByteCode.cpp" > CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.i
 
 CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/daryldabreo/Documents/byteCodeProj/ByteCode.cpp -o CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/CheungLee/30862 HWs/byteCodeProj/ByteCode.cpp" -o CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.s
 
 # Object files for target austin_is_stupid
 austin_is_stupid_OBJECTS = \
@@ -95,7 +95,7 @@ austin_is_stupid: CMakeFiles/austin_is_stupid.dir/main.cpp.o
 austin_is_stupid: CMakeFiles/austin_is_stupid.dir/ByteCode.cpp.o
 austin_is_stupid: CMakeFiles/austin_is_stupid.dir/build.make
 austin_is_stupid: CMakeFiles/austin_is_stupid.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable austin_is_stupid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable austin_is_stupid"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/austin_is_stupid.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/austin_is_stupid.dir/clean:
 .PHONY : CMakeFiles/austin_is_stupid.dir/clean
 
 CMakeFiles/austin_is_stupid.dir/depend:
-	cd /Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/daryldabreo/Documents/byteCodeProj /Users/daryldabreo/Documents/byteCodeProj /Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug /Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug /Users/daryldabreo/Documents/byteCodeProj/cmake-build-debug/CMakeFiles/austin_is_stupid.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/CheungLee/30862 HWs/byteCodeProj" "/Users/CheungLee/30862 HWs/byteCodeProj" "/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug" "/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug" "/Users/CheungLee/30862 HWs/byteCodeProj/cmake-build-debug/CMakeFiles/austin_is_stupid.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/austin_is_stupid.dir/depend
 
