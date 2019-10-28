@@ -37,7 +37,7 @@ ByteCode::ByteCode(char* argv) {
     std::cout << "file size: " << memory_local.size() << std::endl;
 
     while (memory_local[pc] != 00) {
-        switch ((unsigned char)memory_local[pc])
+        switch ((int)memory_local[pc])
         {
             case CMPE:{ CMPE_func(); //cmpe
                 break;
@@ -46,6 +46,7 @@ ByteCode::ByteCode(char* argv) {
             case CMPGT:{ CMPGT_func(); break;}
 
         }
+        pc++;
 
     }
 
@@ -68,6 +69,7 @@ void ByteCode::CMPE_func(){
     {
         rstack[sp-1].int_val = rstack[sp-1].int_val == rstack[sp].int_val;
     }
+    rstack[sp-1].dtype = INT;
     sp--;
     rstack.pop_back();
     pc++;
@@ -90,6 +92,7 @@ void ByteCode::CMPLT_func(){
     {
         rstack[sp-1].int_val = rstack[sp-1].int_val < rstack[sp].int_val;
     }
+    rstack[sp-1].dtype = INT;
     sp--;
     rstack.pop_back();
     pc++;
@@ -112,6 +115,7 @@ void ByteCode::CMPGT_func(){
     {
         rstack[sp-1].int_val = rstack[sp-1].int_val > rstack[sp].int_val;
     }
+    rstack[sp-1].dtype = INT;
     sp--;
     rstack.pop_back();
     pc++;
@@ -131,15 +135,49 @@ void ByteCode::PUSHC_func(){
 
 void ByteCode::PUSHS_func(){
     data test;
-    unsigned char bytes[2] = {memory[1],memory[2]};
-    short valx;
-    memcpy(bytes,&valx,2);
-    test.short_val = valx;
+    unsigned char bytes[2] = {memory[pc+1],memory[pc+2]};
+    short val;
+    memcpy(&val,bytes,2);
+    test.short_val = val;
     test.dtype = SHORT;
     rstack.push_back(test);
     pc += 2;
 }
 
-//void ByteCode::PUSHVC_func() {
-//    rstack[sp] = rstack[fpstack[fpsp]+rstack[sp]+1];
-//}
+void ByteCode::PUSHI_func(){
+    data test;
+    unsigned char bytes[4] = {memory[pc+1],memory[pc+2],memory[pc+3],memory[pc+4]};
+    int val;
+    memcpy(&val,bytes,4);
+    test.int_val = val;
+    test.dtype = INT;
+    rstack.push_back(test);
+    pc+=2;
+}
+
+void ByteCode::PUSHF_func(){
+    data test;
+    unsigned char bytes[4] = {memory[pc+1],memory[pc+2],memory[pc+3],memory[pc+4]};
+    float val;
+    memcpy(bytes,&val,4);
+    test.float_val = val;
+    test.dtype = FLOAT;
+    rstack.push_back(test);
+    pc+=2;
+}
+void ByteCode::PUSHVC_func() {
+    rstack.push_back(rstack[fpstack[fpsp]+rstack[sp].char_val+1]);
+    pc++;
+}
+void ByteCode::PUSHVI_func() {
+    rstack.push_back(rstack[fpstack[fpsp]+rstack[sp].int_val+1]);
+    pc++;
+}
+void ByteCode::PUSHVF_func() {
+    rstack.push_back(rstack[fpstack[fpsp]+rstack[sp].float_val+1]);
+    pc++;
+}
+void ByteCode::POPM_func() {
+    sp -= rstack[sp]+1;
+
+}
