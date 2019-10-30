@@ -205,7 +205,10 @@ void ByteCode::POPM_func() {
 }
 
 void ByteCode::SWP(){
-
+    data temp = rstack[sp];
+    rstack[sp] = rstack[sp-1];
+    rstack[sp-1] = temp;
+    pc++;
 }
 
 //__________________ARITHMETIC FUNCTIONS__________________
